@@ -1,21 +1,19 @@
 
-// var allows re-assignment
+// var allows re-declaration
 
-var employeeId = 101;
-employeeId = 102;
+var a = 10;
+var a = 20;
 
-console.log("var:", employeeId);
+console.log("var value:", a);
 
-// let allows re-assignment
+// let does not allow re-declaration
+let b = 10;
+// let b = 20; // SyntaxError
 
-let salary = 25000;
-salary = 30000;
+console.log("let value:", b);
 
-console.log("let:", salary);
+// const does not allow re-declaration
+const c = 30;
+// const c = 50; // SyntaxError
 
-// const does not allow re-assignment
-
-const department = "QA";
-// department = "Development"; // TypeError
-
-console.log("const:", department);
+console.log("const value:", c);
